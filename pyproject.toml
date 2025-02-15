@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "secrets"
+version = "0.1.0"
+description = ""
+authors = ["Gonzalo Ayuso <gonzalo123@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+get-docker-secret = "^2.0.0"
+
+[tool.poetry.dev-dependencies]
+flask = "^3.0.0"
+gunicorn = "^23.0.0"
+python-dotenv = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

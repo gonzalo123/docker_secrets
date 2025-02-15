@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  ap1:
+    image: service1:latest
+    command: gunicorn -w 1 app:app -b 0.0.0.0:5000 --timeout 180
+    secrets:
+      - db_password
+    ports:
+      - "5000:5000"
+
+secrets:
+  db_password:
+    external: true
