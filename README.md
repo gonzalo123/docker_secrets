@@ -1,4 +1,4 @@
-## hot-reload for Docker secrets in Docker Swarm
+## Hot-reload for Docker secrets in Docker Swarm
 
 The best way to store passwords in a Docker Swarm cluster, apart from proprietary solutions from cloud providers, is the
 use of Docker secrets. Docker secrets are a way to securely store sensitive information, such as passwords, API keys,
