@@ -32,7 +32,7 @@ Our service is deployed as follows:
 version: '3.9'
 
 services:
-  ap1:
+  api:
     image: api_secret:latest
     command: gunicorn -w 1 app:app -b 0.0.0.0:5000 --timeout 180
     secrets:
@@ -45,7 +45,7 @@ secrets:
     external: true
 ```
 
-As we can see, the `db_password` secret is mounted in the `ap1` service container. To deploy our service, we first
+As we can see, the `db_password` secret is mounted in the `api` service container. To deploy our service, we first
 create the secret and then deploy the service:
 
 ```shell
